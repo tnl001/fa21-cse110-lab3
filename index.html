@@ -115,10 +115,13 @@
 
             <section id="misc">
                 <h2 class="subtitle">Relax for next meeting!</h2>
-                <audio controls src="./wind.wav"></audio>
-                <video controls>
-                    <source src="./storm.mp4" type="video/mp4">
-                </video>
+                <div class="audio-vid">
+                    <audio controls src="./wind.wav"></audio>
+                    <video controls>
+                        <source src="./storm.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
             </section>
         </main>
         <footer>
@@ -126,47 +129,50 @@
             <form>
                 <fieldset>
                     <legend>Contact me for further question</legend>
-                    <label for="fullname">Full name: </label>
+                    <label for="fullname" class="ques">Full name: </label>
                     <input type="text" id="fullname" name="info">
                     <br/>
 
-                    <label>Are you a team member?</label>
-                    <label for="true">Yes</label>
-                    <input type="radio" id="true" name="teamcheck">
-                    <label for="false">No</label>
-                    <input type="radio" id="false" name="teamcheck">
+                    <label class="ques">Are you a team member?</label>
+                    <div class="resp">
+                        <label for="true">Yes</label>
+                        <input type="radio" id="true" name="teamcheck">
+                        <label for="false">No</label>
+                        <input type="radio" id="false" name="teamcheck">
+                    </div>
+                    
                     <br/>
 
-                    <label for="res">Do you want to receive a response?</label>
-                    <input type="checkbox" id="res" name="resperm">
+                    <label for="res" class="ques">Do you want to receive a response?</label>
+                    <input type="checkbox" id="res" name="resperm" class="resp">
                     <br/>
                     
-                    <label for="dt">Today's date</label>
-                    <input type="date" id="dt" name="datetime">
+                    <label for="dt" class="ques">Today's date: </label>
+                    <input type="date" id="dt" name="datetime" class="resp">
                     <br/>
                     
-                    <label for="school">School: </label>
-                    <input list="school-choice" id="school" name="school">
+                    <label for="school" class="ques">School: </label>
+                    <input list="school-choice" id="school" name="school" class="resp">
                     <datalist id="school-choice">
                         <option value="UCSD"></option>
                         <option value="Other"></option>
                     </datalist>
                     <br/>
 
-                    <label for="roles-choice">Are you a: </label>
-                    <select name="roles" id="roles-choice">
+                    <label for="roles-choice" class="ques">Are you a: </label>
+                    <select name="roles" id="roles-choice" class="resp">
                         <option value="">Please choose your role</option>
                         <option value="student">Student</option>
                         <option value="staff">Course staff</option>
                     </select>
                     <br/>
 
-                    <label for="msg">Message: </label>
+                    <label for="msg" class="ques">Message: </label>
                     <br/>
-                    <textarea id="msg" name="msg" rows="5" cols="33"></textarea>
+                    <textarea id="msg" name="msg" rows="5" cols="33" class="resp"></textarea>
                     <br/>
 
-                    <button type="button">Send</button>
+                    <button type="button" class="resp">Send</button>
                 </fieldset>
             </form>
         </footer>
