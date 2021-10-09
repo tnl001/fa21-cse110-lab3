@@ -108,6 +108,11 @@ nav {
 
 li {
   display: block;
+  margin: auto;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 [type="button"] {
