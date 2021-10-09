@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.title {
+  font-size: 60px;
+}
+
+#agenda {
+  font-size: 30px;
+}
+
+section p {
+  font-size: 24px;
+}
+
+section > h2 {
+  font-size: 36px;
+}
+
+h2 ~ ol {
+  color: purple;
+  font-size: 30px;
+}
+
+div + nav {
+  font-size: 24px;
+}
+
+h1.main {
+  font-size: 48px;
+}
+
+details {
+  font-size: 24px;
+}
+
+[type="button"] {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  width: 150px;
+  height: 36px;
+}
+
+[type="button"]:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+audio,
+video {
+  width: 500px;
+}
