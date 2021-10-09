@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 .title {
@@ -52,4 +54,15 @@ details {
 audio,
 video {
   width: 500px;
+}
+
+a:active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    color: blue;
+  }
 }
