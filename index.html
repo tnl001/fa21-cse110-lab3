@@ -13,12 +13,13 @@
     <style>
         body {
             background-color: rgb(219, 219, 219);
+            display: flex;
         }
     </style>
 </head>
 <body>
     <header>
-        <div style="background-color:hsla(100, 100%, 50%, 0.5); font-size: 30px; color: blue;">TABLE OF CONTENTS</div>
+        <div style="background-color:hsla(0, 0%, 0%, 1); font-size: 30px; color: rgb(255, 255, 255); width: 100%;">TABLE OF CONTENTS</div>
         <nav style="background-color: #4ff20f;">
             <ul>
                 <li><a href="#attendance">Attendance list</a></li>
@@ -31,140 +32,144 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1 class="title main">Meeting Notes</h1>
-        <h2 class="subtitle">Today: Planning out the project</h2>
-        <h3 class="subtitle">10/1/2021</h3>
-        
-        <hr>
-        
-        <section id="attendance">
-            <h2 class="subtitle">Attendance list</h2>
-            <details>
-                <summary>Names</summary>
-                <ol>
-                    <li>Tai Le</li>
-                    <li>Abc De</li>
-                    <li>Qwe RtYui</li>
-                </ol>
-            </details>
-        </section>
-
-        <section id="agenda">
-            <h2 class="subtitle">Today's agenda</h2>
-            <ol>
-                <li><strong>Brainstorm</strong> ideas</li>
-                <li>Discuss <i>technology stack</i></li>
-                <li>Finalize <span>ideas</span> and <span>tech. stack</span> that we will be using (this is <em>tentative</em>)</li>
-                <li>Chat with <b>teammates</b></li>
-                <li>Assign tasks</li>
-            </ol>
-        </section>
-        
-        <section id="prevnotes">
-            <h2 class="subtitle">Last meeting's remarks</h2>
-            <p>We did not discuss anything serious in our last meeting. <br/>
-                We mainly did <i>meet and greet</i> with each other, nothing too important.
-            </p>
-        </section>
-        
-        <section id="newnotes">
-            <h2 class="subtitle">Next meeting's agenda</h2>
-            <ol>
-                <li>More brainstorming</li>
-                <li>More discussion on tech. stack</li>
-                <li><em>TBD</em></li>
-            </ol>
-        </section>
-
-        <section id="comments">
-            <h2 class="subtitle">Comments and questions</h2>
+    <div id="main-footer">
+        <main>
+            <h1 class="title main">Meeting Notes</h1>
+            <h2 class="subtitle">Today: Planning out the project</h2>
+            <h3 class="subtitle">10/1/2021</h3>
+            
+            <hr>
+            
+            <section id="attendance">
+                <h2 class="subtitle">Attendance list</h2>
                 <details>
-                    <summary><b>When should we be done with brainstorming?</b></summary>
-                    Next week 
-                </details> 
-
-                <details>
-                    <summary><b>Are the tasks assigned yet?</b></summary>
-                    No, tasks are assigned after we're done brainstorming ideas and tech. stack 
-                </details> 
-
-                <details>
-                    <summary><b>Will there be new members coming?</b></summary>
-                    Our team is set for now
-                </details> 
-
-                <details>
-                    <summary><b>How long do we have for this project?</b></summary>
-                    8 weeks
+                    <summary>Names</summary>
+                    <ol>
+                        <li>Tai Le</li>
+                        <li>Abc De</li>
+                        <li>Qwe RtYui</li>
+                    </ol>
                 </details>
-        </section>
-        
-        <section id="pics">
-            <h2 class="subtitle">Pictures and diagrams</h2>
-            <img src="./whiteboardpic.png" alt="Discussion" width="500">
-            <img src="./htmlpic.png" alt="HTML" width="200">
-            <img src="./jspic.png" alt="JavaScript" width="200">
-            <img src="./csspic.png" alt="CSS" width="200">
-            <img src="./catpng.png" alt="CAT!" width="200">
-        </section>
+            </section>
 
-        <section id="misc">
-            <h2 class="subtitle">Relax for next meeting!</h2>
-            <audio controls src="./wind.wav"></audio>
-            <video controls>
-                <source src="./storm.mp4" type="video/mp4">
-            </video>
-        </section>
-    </main>
-    <footer>
-        <h1 class="title">Thanks for reading!</h1>
-        <form>
-            <fieldset>
-                <legend>Contact me for further question</legend>
-                <label for="fullname">Full name: </label>
-                <input type="text" id="fullname" name="info">
-                <br/>
+            <section id="agenda">
+                <h2 class="subtitle">Today's agenda</h2>
+                <ol>
+                    <li><strong>Brainstorm</strong> ideas</li>
+                    <li>Discuss <i>technology stack</i></li>
+                    <li>Finalize <span>ideas</span> and <span>tech. stack</span> that we will be using (this is <em>tentative</em>)</li>
+                    <li>Chat with <b>teammates</b></li>
+                    <li>Assign tasks</li>
+                </ol>
+            </section>
+            
+            <section id="prevnotes">
+                <h2 class="subtitle">Last meeting's remarks</h2>
+                <p>We did not discuss anything serious in our last meeting. <br/>
+                    We mainly did <i>meet and greet</i> with each other, nothing too important.
+                </p>
+            </section>
+            
+            <section id="newnotes">
+                <h2 class="subtitle">Next meeting's agenda</h2>
+                <ol>
+                    <li>More brainstorming</li>
+                    <li>More discussion on tech. stack</li>
+                    <li><em>TBD</em></li>
+                </ol>
+            </section>
 
-                <label>Are you a team member?</label>
-                <label for="true">Yes</label>
-                <input type="radio" id="true" name="teamcheck">
-                <label for="false">No</label>
-                <input type="radio" id="false" name="teamcheck">
-                <br/>
+            <section id="comments">
+                <h2 class="subtitle">Comments and questions</h2>
+                    <details>
+                        <summary><b>When should we be done with brainstorming?</b></summary>
+                        Next week 
+                    </details> 
 
-                <label for="res">Do you want to receive a response?</label>
-                <input type="checkbox" id="res" name="resperm">
-                <br/>
-                
-                <label for="dt">Today's date</label>
-                <input type="date" id="dt" name="datetime">
-                <br/>
-                
-                <label for="school">School: </label>
-                <input list="school-choice" id="school" name="school">
-                <datalist id="school-choice">
-                    <option value="UCSD"></option>
-                    <option value="Other"></option>
-                </datalist>
-                <br/>
+                    <details>
+                        <summary><b>Are the tasks assigned yet?</b></summary>
+                        No, tasks are assigned after we're done brainstorming ideas and tech. stack 
+                    </details> 
 
-                <label for="roles-choice">Are you a: </label>
-                <select name="roles" id="roles-choice">
-                    <option value="">Please choose your role</option>
-                    <option value="student">Student</option>
-                    <option value="staff">Course staff</option>
-                </select>
-                <br/>
+                    <details>
+                        <summary><b>Will there be new members coming?</b></summary>
+                        Our team is set for now
+                    </details> 
 
-                <label for="msg">Message: </label>
-                <br/>
-                <textarea id="msg" name="msg" rows="5" cols="33"></textarea>
-                <br/>
+                    <details>
+                        <summary><b>How long do we have for this project?</b></summary>
+                        8 weeks
+                    </details>
+            </section>
+            
+            <section id="pics">
+                <h2 class="subtitle">Pictures and diagrams</h2>
+                <div class="images">
+                    <img src="./whiteboardpic.png" alt="Discussion" width="500">
+                    <img src="./htmlpic.png" alt="HTML" width="200">
+                    <img src="./jspic.png" alt="JavaScript" width="200">
+                    <img src="./csspic.png" alt="CSS" width="200">
+                    <img src="./catpng.png" alt="CAT!" width="200">
+                </div>
+            </section>
 
-                <button type="button">Send</button>
-            </fieldset>
-        </form>
-    </footer>
+            <section id="misc">
+                <h2 class="subtitle">Relax for next meeting!</h2>
+                <audio controls src="./wind.wav"></audio>
+                <video controls>
+                    <source src="./storm.mp4" type="video/mp4">
+                </video>
+            </section>
+        </main>
+        <footer>
+            <h1 class="title">Thanks for reading!</h1>
+            <form>
+                <fieldset>
+                    <legend>Contact me for further question</legend>
+                    <label for="fullname">Full name: </label>
+                    <input type="text" id="fullname" name="info">
+                    <br/>
+
+                    <label>Are you a team member?</label>
+                    <label for="true">Yes</label>
+                    <input type="radio" id="true" name="teamcheck">
+                    <label for="false">No</label>
+                    <input type="radio" id="false" name="teamcheck">
+                    <br/>
+
+                    <label for="res">Do you want to receive a response?</label>
+                    <input type="checkbox" id="res" name="resperm">
+                    <br/>
+                    
+                    <label for="dt">Today's date</label>
+                    <input type="date" id="dt" name="datetime">
+                    <br/>
+                    
+                    <label for="school">School: </label>
+                    <input list="school-choice" id="school" name="school">
+                    <datalist id="school-choice">
+                        <option value="UCSD"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                    <br/>
+
+                    <label for="roles-choice">Are you a: </label>
+                    <select name="roles" id="roles-choice">
+                        <option value="">Please choose your role</option>
+                        <option value="student">Student</option>
+                        <option value="staff">Course staff</option>
+                    </select>
+                    <br/>
+
+                    <label for="msg">Message: </label>
+                    <br/>
+                    <textarea id="msg" name="msg" rows="5" cols="33"></textarea>
+                    <br/>
+
+                    <button type="button">Send</button>
+                </fieldset>
+            </form>
+        </footer>
+    </div>
 </body>
 </html>
