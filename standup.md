@@ -1,9 +1,9 @@
 # Stand Up Notes
 
-# Name
+## Name
 
-# What did I work on yesterday?
+## What did I work on yesterday?
 
-# What am I working on today?
+## What am I working on today?
 
-# Obstacles, problems, or issues?
+## Obstacles, problems, or issues?
